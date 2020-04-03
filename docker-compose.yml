@@ -10,6 +10,10 @@ services:
       - ./nginx/log:/var/log/nginx
       - ./nginx/conf:/etc/nginx/conf.d
       - ./nginx/html:/usr/share/nginx/html
+      - ./nginx/temp:/usr/share/nginx/temp
+      - ./nginx/sites-available:/etc/nginx/sites-available
+      - ./nginx/sites-enabled:/etc/nginx/sites-enabled
+      - /etc/letsencrypt/:/etc/letsencrypt/
     restart: always
     environment:
       - CERTBOT_EMAIL=a691228@gmail.com

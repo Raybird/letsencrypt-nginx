@@ -1,3 +1,4 @@
 nginx/log/*
 report.html
 letsencrypt/*
+certbot-auto.asc
